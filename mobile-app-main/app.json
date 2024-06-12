@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "GreenMyStreet",
+    "slug": "VisionSwap",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./src/assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "We hebben toegang tot de camera nodig om foto's te maken die we kunnen transformeren naar een groenere versie.",
+        "NSPhotoLibraryUsageDescription": "Wij hebben toegang tot je fotogalerij nodig om foto's te selecteren die we kunnen transformeren naar een groenere versie."
+      },
+      "bundleIdentifier": "com.visionswap.VisionSwap"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "MEDIA_LIBRARY"
+      ],
+      "package": "com.visionswap.VisionSwap"
+    },
+    "web": {
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "217b534c-69e0-4770-8129-2809ee36023b"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/217b534c-69e0-4770-8129-2809ee36023b"
+    }
+  }
+}
